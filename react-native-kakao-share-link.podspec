@@ -1,6 +1,7 @@
 require "json"
 
 package = JSON.parse(File.read(File.join(__dir__, "package.json")))
+kakao_sdk_version = "2.9.0"
 
 Pod::Spec.new do |s|
   s.name         = "react-native-kakao-share-link"
@@ -17,7 +18,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React-Core"
-  s.dependency "KakaoSDKCommon", '~> 2.4.0'
-  s.dependency "KakaoSDKLink", '~> 2.4.0'
-  s.dependency "KakaoSDKTemplate", '~> 2.4.0'
+  s.dependency "KakaoSDKCommon", kakao_sdk_version
+  s.dependency "KakaoSDKLink", kakao_sdk_version
+  s.dependency "KakaoSDKTemplate", kakao_sdk_version
 end
