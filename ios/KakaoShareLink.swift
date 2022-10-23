@@ -16,7 +16,7 @@ class KakaoShareLink: NSObject {
 
     public override init() {
         let appKey: String? = Bundle.main.object(forInfoDictionaryKey: "KAKAO_APP_KEY") as? String
-//         KakaoSDKCommon.initSDK(appKey: appKey!)
+        // KakaoSDKCommon.initSDK(appKey: appKey!)
     }
 
     private func createExecutionParams(dict: NSDictionary, key: String) -> Dictionary<String, String>? {
